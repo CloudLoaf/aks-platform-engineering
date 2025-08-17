@@ -18,7 +18,7 @@ terraform {
     }
     helm = {
       source  = "hashicorp/helm"
-      version = ">= 2.17"
+      version = "~> 2.16"
     }
   }
   required_version = ">= 1.1.0"
@@ -49,7 +49,7 @@ provider "kubernetes" {
 }
 
 provider "helm" {
-  kubernetes = {
+  kubernetes {
     config_path = local_file.kubeconfig.filename
   }
 
