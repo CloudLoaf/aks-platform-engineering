@@ -18,7 +18,7 @@ agents_size = "Standard_D2s_v3"
 
 # Addons configuration
 addons = {
-  enable_kyverno                         = false
+  enable_kyverno = false
 }
 
 # Resource group name
@@ -26,3 +26,6 @@ resource_group_name = "aks-gitops"
 
 # Infrastructure provider
 infrastructure_provider = "crossplane"
+
+# Build backstage
+build_backstage = true
