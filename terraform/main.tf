@@ -109,7 +109,7 @@ module "network" {
 ################################################################################
 resource "azurerm_postgresql_flexible_server" "backstagedbserver" {
   count = local.build_backstage ? 1 : 0
-  name                = "backstage-postgresql-server"
+  name                = "backstage-postgresql-server-12"
   location            = var.location
   public_network_access_enabled = true
   administrator_password = var.postgres_password
