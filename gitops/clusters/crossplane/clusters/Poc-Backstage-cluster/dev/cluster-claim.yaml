@@ -1,0 +1,18 @@
+
+apiVersion: kubernetes.example.com/v1alpha1
+kind: AksClusterClaim
+metadata:
+  name: Poc-Backstage-cluster
+  annotations:
+    crossplane.io/external-name: Poc-Backstage-cluster-dev  
+spec:
+  writeConnectionSecretToRef:
+    name: my-app-cluster-dev-secret
+  location: "North Europe"
+  aks:
+    adminUser: 6d8c0ed1-5831-4a9e-b1c2-6e20c5ea28a9
+    tags:
+      environment: dev
+  virtualNetwork:
+    tags:
+      environment: dev   
