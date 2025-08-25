@@ -10,7 +10,7 @@ spec:
     name: my-app-cluster-dev-secret
   location: "North Europe"
   aks:
-    adminUser: #<<Insert Here: Object Id of the User>>
+    adminUser: 82e3a65e-188d-4d79-a4f1-abdcf5fd1665
     tags:
       environment: dev
   virtualNetwork:
